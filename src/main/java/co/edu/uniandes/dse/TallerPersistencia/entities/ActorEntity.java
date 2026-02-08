@@ -10,6 +10,6 @@ import jakarta.persistence.ManyToMany;
 public class ActorEntity extends BaseEntity {
     private String nombre;
     private String nacionalidad;
-    @ManyToMany
+    @ManyToMany(mappedBy = "actores")
     private List<PeliculaEntity> peliculas;
 }
